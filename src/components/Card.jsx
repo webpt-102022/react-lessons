@@ -1,7 +1,7 @@
 import perrete from '../assets/dog.jpeg';
 
 const Card = () => {
-  const title = "Hello I'm the title"
+  const title = "Hello I'm the title";
   return (
     <div className="card">
       <h3>{title}</h3>
