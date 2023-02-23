@@ -1,12 +1,22 @@
-import perrete from '../assets/dog.jpeg';
+const Card = (props) => {
 
-const Card = () => {
-  const title = "Hello I'm the title";
+  const { animal: { name, age, color, isVaccined }, children } = props;
+
+  // Ternary operator
+  const myClass = isVaccined ? 'vaccined' : 'notVaccined';
+
+  // Same with standard if
+  // if (animal.isVaccined === true) {
+  //   myClass = "vaccined"
+  // } else {
+  //   myClass = "notVaccined"
+  // }
+
   return (
-    <div className="card">
-      <h3>{title}</h3>
-      <img src={perrete} alt="Perro en el prado" />
-    </div>
+    <div className={myClass} >
+      <h3>{name}</h3>
+      <p>Age: {age} | Color: {color} | Description: {children}</p>
+    </div >
   )
 }
 

@@ -8,3 +8,11 @@ nav.navbar {
   justify-content: space-around;
   gap: 30px;
 }
+
+.vaccined {
+  background-color: beige;
+}
+
+.notVaccined {
+  background-color: rgb(222, 175, 158);
+}
